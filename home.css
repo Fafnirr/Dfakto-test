@@ -1,0 +1,653 @@
+@font-face {
+    font-family: 'Porpora-Regular';
+    src: url('fonts/Porpora-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Porpora-Regular", sans-serif;
+}
+
+.background {
+    background-color: rgb(8, 34, 54);
+    background-image: url('image/background-pattern.png');
+    background-size: 18%;
+    background-repeat: no-repeat fixed 100%;
+    transform-style: preserve-3d;
+}
+
+#logo{
+	padding-left: 10%;
+}
+
+#header{
+    width: 100%;
+	display: flex;
+}
+
+.navbar {
+	padding-left: 8%;
+    display: flex;
+	overflow: hidden;
+}
+
+.navbar a {
+	float: left;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	padding: 8px 10px;
+	text-decoration: none;
+    font-family: "Porpora-Regular", sans-serif;
+}
+
+.d {
+	float: left;
+	overflow: hidden;
+}
+
+.d .d-btn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 20px 22px;
+	background: inherit;
+    width: 10em;
+    font-family: "Porpora-Regular", sans-serif;
+}
+
+.fa-solid{
+    padding-top: 6%;
+}
+
+.links{
+	display: flex;
+}
+
+.headerChart{
+	height: 20px;
+}
+
+.headerTittle{
+	padding-left: 5%;
+	padding-top: 3%;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.btnTittle{
+	color: rgb(74, 174, 214);
+}
+
+.conts{
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	height: 10em;
+	padding-left: 5%;
+}
+
+.discover{
+	background-color: transparent;
+	border: none;
+	width: 33%;
+	height: 10em;
+	padding-left: 5%;
+}
+
+.conts:hover{
+	cursor: pointer;
+}
+
+#dFactHeader{
+	padding-bottom: 2%;
+	display: flex;
+}
+
+#propilotHeader{
+	padding-bottom: 2%;
+	display: flex;
+}
+
+.headerLorem{
+	padding-right: 50%;
+}
+
+.d-content {
+	display: none;
+	position: absolute;
+	background: #f9f9f9;
+	width: 100%;
+	left: 0;
+	z-index: 10;
+}
+
+.d:hover .d-content {
+	display: block;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+	background: #5F5F5F;
+	height: 250px;
+}
+
+.column a {
+	display: block;
+	float: none;
+	color: #eee;
+	text-align: left;
+}
+
+.column h3 {
+	color: #eee;
+	padding: 10px;
+}
+
+.column a:hover {
+	color: #fff;
+	background: #373737;
+}
+
+#demoBtnContainer{
+    margin-top: 5px;
+    margin-left: 25%;
+}
+
+#demoBtn{
+    background-color: rgb(74, 174, 214);
+    color: rgb(21, 24, 26);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.arrow{
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+}
+
+#demoBtn:hover{
+    padding: 15px 35px 15px 15px;
+}
+
+#demoBtn:hover .arrow{
+    padding-left: 8px;
+    opacity: 1;
+}
+
+#languageBtn{
+    margin-left: 15px;
+    background: none;
+    border: none;
+    color: rgb(74, 174, 214);
+    font-family: "Porpora-Regular", sans-serif;
+    font-weight: 600;
+}
+
+#ressource-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+#ressource-dropdown-content {
+    display: none;
+    float: left;
+    position: absolute;
+    z-index: 10;
+    background-color: #454444;
+}
+
+#ressource-dropdown:hover #ressource-dropdown-content {
+    display: block;
+}
+
+#ressource-dropdown-content h4 {
+    color: #333;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row:after {
+	display: table;
+	clear: both;
+}
+
+#product-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+#product-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.cont{
+    display: flex;
+    width: 100%;
+}
+
+.textContainer{
+    width: 45%;
+    margin-left: 6.5%;
+    margin-top: 8%;
+}
+
+.imageContainer{
+    width: 40%;
+    margin-top: 11%;
+    margin-left: -5%;
+}
+
+#dataManagement{
+    width: 100%;
+}
+
+#title{
+    color: white;
+    width: 70%;
+    font-size: 72px;
+}
+
+#titleCatch{
+    color: white;
+    width: 70%;
+    font-size: 18px;
+}
+
+.coloredText{
+    color: rgb(74, 174, 214);
+}
+
+#talkBtn{
+    background-color: rgb(223, 118, 85);
+    color: rgb(21, 24, 26);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.arrow{
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+}
+
+#talkBtn:hover{
+    padding: 15px 35px 15px 15px;
+}
+
+#talkBtn:hover .arrow{
+    padding-left: 8px;
+    opacity: 1;
+}
+
+.clientContainer{
+    margin-left: -5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.client{
+    width: 20%;
+    height: 10%;
+    margin-top: 5%;
+}
+
+#axaLogo{
+    width: 70px;
+    height: 70px;
+}
+
+.textBannerContainer{
+    height: 13em;
+    margin-top: 5%;
+    width: 90%;
+}
+
+#textBanner{
+    width: 100%;
+    position: static;
+    color: transparent;
+    font-weight: 900;
+    height: 1em;
+    font-size: 150px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(74, 174, 214);
+    transform: rotate(-5deg);
+    position: relative;
+}
+
+.color{
+    color: rgb(74, 174, 214);
+}
+
+#divider{
+    width: 100%;
+}
+
+.chaosContainer{
+    margin-top: -4px;
+    background-color: #fff;
+    height: 55em;
+    display: flex;
+}
+
+#chaosTitleContainer{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+#chaosTextContainer{
+    width: 35%;
+}
+
+#chaosTitle{
+    font-size: 60px;
+    width: 50%;
+    margin-top: 10%;
+    font-family: "Porpora-Regular", sans-serif;
+}
+
+#chaosText{
+    font-size: 18px;
+    margin-top: 10%;
+    font-family: "Porpora-Regular", sans-serif;
+}
+
+#shapesDuo{
+    height: 35em;
+}
+
+#visionBtnContainer{
+    margin-top: 5%;
+}
+
+#visionBtn{
+    background-color: rgb(74, 174, 214);
+    color: rgb(21, 24, 26);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.arrow{
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+}
+
+#visionBtn:hover{
+    padding: 15px 40px 15px 15px;
+}
+
+#visionBtn:hover .arrow{
+    padding-left: 10px;
+    opacity: 1;
+}
+
+
+#computerScreenDataContainer{
+    margin-top: -15%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#computerScreenData{
+    width: 70%;
+    height: auto;
+}
+
+#dataFactory{
+    margin-top: 5%;
+}
+
+#tackleChallenges{
+    display: flex;
+    justify-content: center;
+}
+
+#tackleTitle{
+    font-size: 60px;
+    color: #fff;
+}
+
+#dataFactorySquareOne{
+    margin-top: 3%;
+    height: 785px;
+    display: flex;
+    justify-content: center;
+}
+
+.bgWhite{
+    width: 80%;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+}
+
+#dataFactoryImg{
+    width: 40%;
+    margin-left: 8%;
+}
+
+#dataFactoryV3{
+    width: 100%;
+}
+
+#dataFactoryV2{
+    margin-left:-33%;
+    z-index: 1;
+}
+
+#dataFactoryText{
+    width: 50%;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+#dFactTittleCont{
+    width: 50%;
+    
+    display: flex;
+}
+
+#chartLineuUp{
+    height: 48px;
+    width: 48px;
+}
+
+#dataFactTittle{
+    font-size: 48px;
+}
+
+#dFactText{
+    padding-top: 5%;
+    width: 85%;
+}
+
+#options{
+    margin-top: 5%;
+}
+
+.choisses{
+    margin-top: 13%;
+    margin-left: 3%;
+    display: flex;
+}
+
+.choisses p{
+    padding-left: 5%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#moreData{
+    background-color: rgb(223, 118, 85);
+    color: rgb(21, 24, 26);
+    border: none;
+    border-radius: 30px;
+    margin-top: 10%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.arrow{
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+}
+
+#moreData:hover{
+    padding: 15px 35px 15px 15px;
+}
+
+#moreData:hover .arrow{
+    padding-left: 8px;
+    opacity: 1;
+}
+
+#dataFactorySquareTwo{
+    margin-top: 3%;
+    height: 785px;
+    display: flex;
+    justify-content: center;
+}
+
+#propilotTextCont{
+    width: 50%;
+    padding-left: 6%;
+    padding-top: 5%;
+}
+
+#propilotTittleCont{
+    width: 50%;
+    display: flex;
+}
+
+#chartLineuUp{
+    height: 48px;
+    width: 48px;
+}
+
+#propilotTittle{
+    font-size: 48px;
+}
+
+#propilotText{
+    padding-top: 5%;
+    width: 67%;
+}
+
+#options{
+    margin-top: 5%;
+}
+
+.propilotChoisses{
+    margin-top: 10%;
+    margin-left: 3%;
+    display: flex;
+}
+
+.propilotChoisses p{
+    padding-left: 5%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#morePropilot{
+    background-color: rgb(223, 118, 85);
+    color: rgb(21, 24, 26);
+    border: none;
+    border-radius: 30px;
+    margin-top: 10%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.arrow{
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+}
+
+#morePropilot:hover{
+    padding: 15px 35px 15px 15px;
+}
+
+#morePropilot:hover .arrow{
+    padding-left: 8px;
+    opacity: 1;
+}
+
+#elipse{
+    height: 100%;
+    border-radius: 28px;
+}
+
+#secondDivider{
+    margin-top: 30%;
+    width: 100%;
+    margin-bottom: 18%;
+}
+
+#carouselCont{
+    background-color: #fff;
+    width: 100%;
+    height: 55em;
+}
+
+#paraBlueCont{
+    margin-top: -10%;
+}
+
+#trustCont{
+    display: flex;
+}
+
+#trust{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 5%;
+    padding-left: 23%;
+    width: 30%;
+    align-items: center;
+    padding-right: 7%;
+    z-index: 1;
+}
+
+#you{
+    padding-left: 10%;
+}
